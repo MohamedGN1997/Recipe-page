@@ -1,0 +1,10 @@
+*{margin: 0px;padding: 0px;box-sizing: border-box;outline: none;list-style: none;text-decoration: none;}
+:root{
+    --c-rose-800:rgb(122, 40, 78);
+    --c-rose-50:rgb(255, 247, 251);
+    --c-stone-900:rgb(49, 46, 44);
+    --c-stone-600:rgb(95, 86, 77);
+    --c-stone-150:rgb(227, 221, 215);
+    --c-brown:rgb(133, 70, 50);
+    --c-white:rgb(255,255,255);
+}
