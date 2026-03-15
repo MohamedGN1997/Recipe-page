@@ -10,14 +10,14 @@
     --c-white:rgb(255,255,255);
 }
 body {background-color: var(--c-stone-100);max-width: 1440px;min-height: 100vh; margin: 0 auto;display: flex;justify-content: center;align-items: center;}
-body main .container{max-width: 736px;padding: 40px;border-radius: 24px;background-color: var(--c-white);}
+body main {max-width: 736px;padding: 40px;border-radius: 24px;background-color: var(--c-white);}
 /* start Header */
 body main .container .headPage{width: 100%;height: 300px;border-radius: 12px;overflow: hidden;}
-body main .container .headPage img{width: inherit;height: inherit;object-fit: cover;}
+body main .container .headPage img{width: inherit;height: 100%;object-fit: cover;}
 /* start Description */
 body main .container .description{margin-top: 40px;}
 body main .container .description .title h1, p{font-weight: 400;}
-body main .container .description .title h1{font-size:40px;color: var(--c-stone-900);font-family: "young serif", sans-serif;}
+body main .container .description .title h1{font-size:40px;color: var(--c-stone-900);font-family: "young serif", sans-serif;font-weight: 400;}
 body main .container .description .title p{font-size: 16px;margin-top: 24px;color: var(--c-stone-600);font-family: "outfit";}
 /* start Preparation */
 body main .container .description .preparation{background-color: var(--c-rose-50);padding: 24px;margin-top: 32px;}
@@ -54,3 +54,20 @@ body main .container .description .nutrition .table-list .tr span{display: block
 body main .container .description .nutrition .table-list .tr span:first-child{margin-left: 32px;width: 50%;}
 body main .container .description .nutrition .table-list .tr span.content{font-weight: 700;color: var(--c-brown-800);}
 body main .container .description .nutrition .table-list .line-table{width: 100%;height: 1px;margin: 16px auto;background-color: var(--c-stone-150);}
+
+/* start responsive page using media queries */
+@media (max-width: 768px){
+    body main {max-width: 616px; border-radius: 0px;}
+}
+@media (max-width: 616px){
+    body {display:block;}
+    body main {padding:0;}
+    body main .container .headPage {border-radius: 0px;}
+    body main .container .headPage img{ object-fit: fill;}
+    body main .container .description{padding:40px 32px;margin-top: 0px;}
+    body main .container .description .title h1{font-size:36px;}
+}
+@media (max-width: 375px){
+    body main .container .headPage {height: 171px;}
+    body main .container .description .title h1{font-size:36px;text-align: center;}
+}
